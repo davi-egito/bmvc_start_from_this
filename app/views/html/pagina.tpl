@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha primeira página com o BMVC</title>
+    <title>Disciplinas de Software Relevantes Para Você</title>
     <link rel="stylesheet" type="text/css" href="/static/css/pagina.css">
     <script src="/static/js/pagina.js"></script>
 
 </head>
 <body>
 
-    <h1>Olá, {{user}}! Esta é a minha primeira página com o BMVC :)</h1>
+    <h1>Olá, {{user}}! Venha conosco ajudar na priorização de disciplinas da sua graduação!</h1>
 
 <body>
 </html>
