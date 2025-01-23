@@ -14,11 +14,11 @@ class Application():
        return content()
 
 
-    def helper(self):
+    def helper(self): #controle da pagina helper
         return template('app/views/html/helper')
     
     
-    def pagina(self):
+    def pagina(self): #controle da pagina pagina
         usuario = 'Davi'
         if usuario == 'Davi':
             return template('app/views/html/pagina',user=usuario)
