@@ -7,20 +7,22 @@ class Application():
         self.pages = {
             'pagina': self.pagina
         }
-
+        self.model= DataRecord()
 
     def render(self,page):
        content = self.pages.get(page, self.helper)
-       return content()
-
+       if not parameter:
+           return content()
+       else:
+           return content(parameter)       
 
     def helper(self): #controle da pagina helper
         return template('app/views/html/helper')
     
-    
-    def pagina(self): #controle da pagina pagina
-        usuario = 'Davi'
-        if usuario == 'Davi':
-            return template('app/views/html/pagina',user=usuario)
+    def pagina(self, parameter=None): #controle da pagina pagina
+        if not parameter:
+            return template('app/views/html/pagina')
         else:
-            return template('app/views/html/pagina',user='Visitante')
+            user = self.models.work_with_parameter(parametro)
+            if not user:
+                return redirect('/pagina')
